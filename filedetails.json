@@ -5,7 +5,7 @@ auth-user-pass
 client
 dev tun
 proto tcp
-remote 69.10.36.45:1147@s.ytimg.com
+remote 69.10.36.45 1147
 persist-key
 persist-tun
 resolv-retry infinite
