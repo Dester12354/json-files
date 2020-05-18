@@ -1,7 +1,10 @@
 {
 "ovpn_file":[
 {"id":0,"file":"
-auth-user-pass
+<auth-user-pass>
+ free2
+ free2
+</auth-user-pass>
 client
 dev tun
 proto tcp
