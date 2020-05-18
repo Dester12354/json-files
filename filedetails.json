@@ -22,7 +22,10 @@ script-security 2
 cipher none
 auth none
 setenv CLIENT_CERT 0
-auth-user-pass
+<auth-user-pass>
+free2
+free2
+</auth-user-pass>
 http-proxy 69.10.36.45 3355
 http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
 http-proxy-option CUSTOM-HEADER Host storage.googleapis.com
