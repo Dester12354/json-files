@@ -1,9 +1,18 @@
 {
   "ovpn_file":[
     {"id":0,"file":"auth-user-pass
+auth-user-pass
 client
 dev tun
 proto tcp
+remote 128.199.96.119 110
+
+http-proxy 128.199.96.119 8080
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
+http-proxy-option CUSTOM-HEADER Host ssl.gstatic.com
+http-proxy-option CUSTOM-HEADER X-Forward-Host ssl.gstatic.com
+http-proxy-option CUSTOM-HEADER Connection: Keep-Alive
+http-proxy-option CUSTOM-HEADER Proxy-Connection: keep-alive
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIEujCCA6KgAwIBAgIJAMTgZVda39+tMA0GCSqGSIb3DQEBCwUAMIGZMQswCQYD
@@ -33,6 +42,6 @@ HTbiTnAKZZNi1+e/MeV6WcL5EzoUm9nggJYqxO9aI33rH+5VB+RTx419S3KTB/0c
 GeXgc4lxfsMtfoobR1EBVpC+FF3/1uczm4ynBR9NAVq/fSANPx4xkTYvGao1qi3q
 2pxWJ4fctHAn98C8OWA=
 -----END CERTIFICATE-----
-</ca>"},
+</ca>},
     {"id":1,"file":""}]
 }
