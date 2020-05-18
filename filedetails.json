@@ -1,8 +1,6 @@
 {
   "ovpn_file":[
-    {"id":0,"file":"auth-user-pass
-auth-user-pass
-client
+    {"id":0,"file":"client
 dev tun
 proto tcp
 remote 128.199.96.119 110
@@ -13,6 +11,10 @@ http-proxy-option CUSTOM-HEADER Host ssl.gstatic.com
 http-proxy-option CUSTOM-HEADER X-Forward-Host ssl.gstatic.com
 http-proxy-option CUSTOM-HEADER Connection: Keep-Alive
 http-proxy-option CUSTOM-HEADER Proxy-Connection: keep-alive
+<auth-user-pass>
+free1
+free1
+</auth-user-pass>    
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIEujCCA6KgAwIBAgIJAMTgZVda39+tMA0GCSqGSIb3DQEBCwUAMIGZMQswCQYD
