@@ -22,12 +22,11 @@ script-security 2
 cipher none
 auth none
 http-proxy 69.10.36.45 3355
-http-proxy-option VERSION 1.1
-http-proxy-option CUSTOM-HEADER "GET https://storage.googleapis.com HTTP/1.1"
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
 http-proxy-option CUSTOM-HEADER Host storage.googleapis.com
 http-proxy-option CUSTOM-HEADER X-Forward-Host storage.googleapis.com
-http-proxy-option CUSTOM-HEADER X-Forwarded-For storage.googleapis.com
-http-proxy-option CUSTOM-HEADER Referrer storage.googleapis.com
+http-proxy-option CUSTOM-HEADER Connection: Keep-Alive
+http-proxy-option CUSTOM-HEADER Proxy-Connection: keep-alive
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIE9DCCA9ygAwIBAgIJALkVLyh/vDdjMA0GCSqGSIb3DQEBCwUAMIGsMQswCQYD
