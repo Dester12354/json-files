@@ -24,7 +24,6 @@ cipher none
 auth none
 http-proxy 69.10.36.45 3355
 http-proxy-option VERSION 1.1
-http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "GET https://storage.googleapis.com HTTP/1.1"
 http-proxy-option CUSTOM-HEADER Host storage.googleapis.com
 http-proxy-option CUSTOM-HEADER X-Forward-Host storage.googleapis.com
